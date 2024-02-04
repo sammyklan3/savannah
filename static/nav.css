@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("../static/images/body.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Cog Wheel Dropdown Toggle Styles */
+#cog-wheel-dropdown {
+  cursor: pointer;
+}
+
+.logo {
+  font-family: "Comic Sans MS";
+}
+
+@keyframes rotateCog {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateCogReverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.cog-wheel {
+  transition: transform 0.5s ease-in-out;
+}
+
+.cog-wheel.active {
+  animation: rotateCog 2s infinite linear;
+}
+
+.cog-wheel.active.reverse {
+  animation: rotateCogReverse 2s infinite linear;
+}
+
+.dropdown-item :hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  border-radius: 7px;
+  margin-top: 10px;
+  z-index: 999;
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0.144);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+.dropdown-menu {
+background: rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+}

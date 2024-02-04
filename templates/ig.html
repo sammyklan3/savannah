@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Instagram Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white mb-4 border-bottom"
+    >
+      <a class="navbar-brand font-weight-bold" href="#">Instagram</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Discover</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Post -->
+        <div class="col-md-8">
+          <div class="card mb-4">
+            <div class="card-header">
+              <img
+                src="https://via.placeholder.com/50"
+                alt=""
+                class="rounded-circle mr-2"
+              />
+              <span class="font-weight-bold">Username</span>
+            </div>
+            <img
+              src="https://via.placeholder.com/750x500"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <i class="far fa-heart fa-2x"></i>
+                </div>
+                <div class="col-2">
+                  <i class="far fa-comment fa-2x"></i>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12">
+                  <p class="font-weight-bold mb-0">1,000 Likes</p>
+                  <p class="font-weight-bold mb-0">
+                    Username <span class="text-muted">Caption</span>
+                  </p>
+                  <p class="text-muted">View all 20 comments</p>
+                  <p class="text-muted small">Posted 2 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-header">
+              <h5 class="font-weight-bold mb-0">Suggestions for you</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-2">
+                    <img
+                      src="https://via.placeholder.com/50"
+                      alt=""
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <p class="font"></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

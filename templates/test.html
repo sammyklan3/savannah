@@ -1,0 +1,66 @@
+<!-- Head content -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Savannah | Home</title>
+<link
+  rel="shortcut icon"
+  href="../static/images/savannah-logo-zip-file/png/logo-white.png"
+  type="image/x-icon"
+/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/main.css" />
+
+<!-- Nav bar -->
+{% include 'nav.html' %}
+
+<!-- Snackbar content -->
+<div id="snackbar" class="shadow">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-6 h-6 mr-2"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+    <span>{{msg}}</span>
+  </div>
+<!-- Header -->
+  <h1>Savannah</h1>
+
+  <!-- sidebar content -->
+  <h3>Categories</h3>
+  <ul>
+    <li><a href="#">Travel</a></li>
+    <li><a href="#">Food</a></li>
+    <li><a href="#">Fashion</a></li>
+    <li><a href="#">Fitness</a></li>
+  </ul>
+  
+  <h3>About</h3>
+  <p>Welcome to Savannah</p>
+  <p>Follow me for exciting updates and adventures.</p>
+  
+  <h3>Popular Tags</h3>
+  <ul>
+    <li><a href="#">#instagood</a></li>
+    <li><a href="#">#photooftheday</a></li>
+    <li><a href="#">#beautiful</a></li>
+    <li><a href="#">#travelgram</a></li>
+    <li><a href="#">#foodie</a></li>
+  </ul>
+
+  <!-- Script imports -->
+  <script src="https://kit.fontawesome.com/1d4b4e8378.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="../static/script.js"></script>
